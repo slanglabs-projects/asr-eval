@@ -1,0 +1,29 @@
+version: "0.0.1"
+hosts:
+  prod: "https://infer.slanglabs.in"
+  stage: "https://infer-stage.slanglabs.in"
+  local: "http://localhost:8083"
+tiers:
+  prod: ~
+  stage:
+    id: "12e80a408de240f2a138c8daeb007fe6"
+    key: "6315a7a8dfec4fb3bff96d0f17f7905d"
+    env: "prod"
+    version: "1.x.x"
+  local:
+    id: "eac6102ecc0240a3b6b63e199130a807"
+    key: "7967a025ffd0451a8648c0f4fb0b6e27"
+    env: "stage"
+    version: "1.x.x"
+engines:
+  - indic_conformer
+  - google_speech
+data: 'reference_audio_transcripts.csv'
+# data: 'WER_Sample.csv'
+directory: '/Users/harikrishnanc/Downloads/Benchmark_28_29_Nov - 1/'
+base_url: 'https://storage.googleapis.com/slang-audio-test-data/audio/'
+use_url: True
+reference_dump: 'reference_data.json'
+results_dump: 'ASR_quality_metrics_raw.csv'
+asr_hints_file: 'payments_asr_hints.json'
+bhashini_ip: "34.126.101.245"
