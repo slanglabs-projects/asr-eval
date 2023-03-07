@@ -30,10 +30,16 @@ class Driver(object):
         self.metrics = SlangMetrics()
         self.directory = self.config.config['directory']
         self.bhashini_ip = self.config.config['bhashini_ip']
+        self.use_slang_normalizer = self.config.config['use_slang_normalizer']
+        self.use_nemo = self.config.config['use_nemo']
+        self.use_number_parser = self.config.config['use_number_parser']
         self.use_url = self.config.config['use_url']
         asr_hints_file = self.config.config['asr_hints_file']
         self.asr_hints = self.read_asr_hints(asr_hints_file)
         self.base_url = self.config.config['base_url']
+        if self.use_nemo:
+            from nemo_text_processing.inverse_text_normalization.inverse_normalize import InverseNormalizer
+            self.inverse_normalizer  = InverseNormalizer
         if self.use_url is False:
             self.files = os.listdir(self.directory)
         else:
@@ -62,6 +68,41 @@ class Driver(object):
         string = re.sub(r'[!"#$*,\/;<=>?[\]^_`{|}~.]+', '', string)  # noqa  Remove special characters
         string = re.sub(r'[()]', ' ', string)
         return string.strip().lower()
+
+    def filter_entities(self, responses):
+        for item in responses:
+            _filter = [
+                'payments_bill_type',
+                'payments_bill_action',
+                'payments_navigation_target',
+                'payments_transaction_action',
+                'payments_transaction_name',
+                'payments_transaction_amount'
+            ]
+
+            ent = []
+            for i in item["entities"]:
+                n = next(iter(i))
+                if n in _filter:
+                    ent.append(i)
+
+            item["entities"] = ent
+
+        return responses
+
+    def transform_text(self, text):
+        out = text
+        if self.use_slang_normalizer:
+            out = self.normalize_str(out)
+
+        if self.use_nemo:
+            out = self.inverse_normalizer.inverse_normalize(out, verbose=False)
+
+        if self.use_number_parser:
+            out = self.apply_number_parser(out)
+
+        return out
+            
 
     def apply_number_parser(self, text):
         updated_text = deepcopy(text)
@@ -160,6 +201,14 @@ class Driver(object):
         elif engine == 'slang_google_speech':
             self.prepare_google_speech(True)
             out = self.transcribe_google_speech(url)
+        elif engine == 'indic_conformer':
+            out = self.transcribe_indic_conformer(url)
+        '''
+        elif engine == 'nemo_indic_conformer':
+            out = self.transcribe_indic_conformer(url)
+            out = inverse_normalizer.inverse_normalize(out, verbose=False)
+        elif engine == 'slang_indic_conformer':
+            out = self.transcribe_indic_conformer(url)
             out = inverse_normalizer.inverse_normalize(out, verbose=False)
             out = self.apply_number_parser(out)
         elif engine == 'nemo_google_speech':
@@ -172,21 +221,14 @@ class Driver(object):
             out = self.transcribe_bhashini(url)
             out = self.normalize_str(out)
             out = self.apply_number_parser(out)
-        elif engine == 'indic_conformer':
-            out = self.transcribe_indic_conformer(url)
-        elif engine == 'nemo_indic_conformer':
-            out = self.transcribe_indic_conformer(url)
-            out = inverse_normalizer.inverse_normalize(out, verbose=False)
-        elif engine == 'slang_indic_conformer':
-            out = self.transcribe_indic_conformer(url)
-            out = inverse_normalizer.inverse_normalize(out, verbose=False)
-            out = self.apply_number_parser(out)
+        '''
         return out
 
     def run(self):
         with open(self.dump_file) as f:
             reference_responses = json.load(f)
         reference_responses = [res for i, res in enumerate(reference_responses) if i not in self.dropped_idx]   # noqa
+        reference_responses = self.filter_entities(reference_responses)
         for engine in self.asr_engines:
             print(f"Computing WER for {engine}")
             predicted = []
@@ -202,8 +244,8 @@ class Driver(object):
                     filepath = os.path.join(self.directory, f + '.wav')
                 try:
                     hypothesis = self.transcript_audio(filepath, engine)
-                    #reference = self.normalize_str(reference)
-                    #hypothesis = self.normalize_str(hypothesis)
+                    hypothesis = self.transform_text(hypothesis)
+                    reference = self.transform_text(reference)
                     wer = jiwer.wer(reference, hypothesis)
                     predicted.append(hypothesis)
                     wers.append(wer)

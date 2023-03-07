@@ -16,14 +16,19 @@ tiers:
     env: "stage"
     version: "1.x.x"
 engines:
-  - indic_conformer
+  #- indic_conformer
   - google_speech
-data: 'reference_audio_transcripts.csv'
+  - slang_google_speech
+#data: 'reference_audio_transcripts.csv'
 # data: 'WER_Sample.csv'
+data: 'sample_transcripts.csv'
 directory: '/Users/harikrishnanc/Downloads/Benchmark_28_29_Nov - 1/'
 base_url: 'https://storage.googleapis.com/slang-audio-test-data/audio/'
 use_url: True
-reference_dump: 'reference_data.json'
-results_dump: 'ASR_quality_metrics_raw.csv'
+reference_dump: 'payments_reference_data.json'
+results_dump: 'ASR_quality_metrics_raw_test.csv'
 asr_hints_file: 'payments_asr_hints.json'
+use_slang_normalizer: False
+use_nemo: False
+use_number_parser: False
 bhashini_ip: "34.126.101.245"

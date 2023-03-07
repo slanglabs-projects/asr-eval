@@ -1,0 +1,6013 @@
+[
+    {
+        "text": "please pay 50 percent of my credit card bills",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "credit card bills"
+            }
+        ]
+    },
+    {
+        "text": "send 100000 rupees to ajith",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "ajith"
+            },
+            {
+                "payments_transaction_amount": "100000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "open the qr code",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "how much money do i have in my account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account"
+            }
+        ]
+    },
+    {
+        "text": "send 400 rupees as a gift to giri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "giri"
+            },
+            {
+                "payments_transaction_amount": "400"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "donate 2000000 to azim premji foundation",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "send 200 rupees as a gift to vishnu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "vishnu"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "pay the water bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "water bill"
+            }
+        ]
+    },
+    {
+        "text": "i want to pay airtel bill of 600 rupees",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "airtel bill "
+            }
+        ]
+    },
+    {
+        "text": "want to pay 100 rupees to porche",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "porche"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "want"
+            }
+        ]
+    },
+    {
+        "text": "pay my sbi card credit card bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "credit card bill"
+            }
+        ]
+    },
+    {
+        "text": "please open a qr scanner to send 500 rupees to shalu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr scanner"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_name": "shalu"
+            }
+        ]
+    },
+    {
+        "text": "i would like 20000 rupees from myself",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "myself"
+            },
+            {
+                "payments_transaction_amount": "20000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send dad 1100 rupees for diwali has a gift",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "dad"
+            },
+            {
+                "payments_transaction_amount": "1100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "how much do i have in my bank",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "scan and send 6650 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "6650"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 5000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "transfer 200 rupees to vijay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "transfer"
+            }
+        ]
+    },
+    {
+        "text": "i want to see balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "request 500 rupees from shanthi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "shanthi"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i would like to see my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my balance"
+            }
+        ]
+    },
+    {
+        "text": "send 500 rupees to ajay has a gift",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "ajay"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me my account balance as of today",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance"
+            }
+        ]
+    },
+    {
+        "text": "pay my life insurance bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "life insurance bill"
+            }
+        ]
+    },
+    {
+        "text": "approve electricity bill",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "arya",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "arya"
+            }
+        ]
+    },
+    {
+        "text": "show my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "qr code",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "i want some great offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "whats my account history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account history"
+            }
+        ]
+    },
+    {
+        "text": "can you please pay the electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "electricity bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "karthikeyan needs 500 rupees please send it",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "karthikeyan"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want 75 rupees from hari",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "hari"
+            },
+            {
+                "payments_transaction_amount": "75"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "want"
+            }
+        ]
+    },
+    {
+        "text": "scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "from nagendra",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "nagendra"
+            }
+        ]
+    },
+    {
+        "text": "10000",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10000"
+            }
+        ]
+    },
+    {
+        "text": "pay my electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "electricity bill"
+            }
+        ]
+    },
+    {
+        "text": "show me all the transaction of today",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction"
+            }
+        ]
+    },
+    {
+        "text": "view my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "send receive request from icici bank for 1000000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "icici bank"
+            },
+            {
+                "payments_transaction_amount": "1000000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to scan and pay 1500 rupees to the hardware shop",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_name": "hardware shop"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "request shradha to send 211 rupees also to me",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "shradha"
+            },
+            {
+                "payments_transaction_amount": "211"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 3560 five rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "3560 five"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send 6000 to hariharan",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "hariharan"
+            },
+            {
+                "payments_transaction_amount": "6000"
+            }
+        ]
+    },
+    {
+        "text": "send 500 rupees to ankitha",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "ankitha"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show my saving account balance for pnb bank account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance "
+            }
+        ]
+    },
+    {
+        "text": "why",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "donate hariharan foundation with 100 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "send money 2000 rupees to papa",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "papa"
+            },
+            {
+                "payments_transaction_amount": "2000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "harikrishnan",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "harikrishnan"
+            }
+        ]
+    },
+    {
+        "text": "ask vijetha to pay me 1000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "ask"
+            },
+            {
+                "payments_transaction_name": "vijetha"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "give vijay 250 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "250"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "give"
+            }
+        ]
+    },
+    {
+        "text": "send 50000 to maa for her anniversary gift",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "maa"
+            },
+            {
+                "payments_transaction_amount": "50000"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to madhuri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "madhuri"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "open the qr scanner",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "qr scanner"
+            }
+        ]
+    },
+    {
+        "text": "pay dth payment of 600",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "dth "
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "send 1500 to saurav for last party",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "saurav"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_action": "send"
+            }
+        ]
+    },
+    {
+        "text": "scan 3000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "3000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "send 600 rupees to anjali as a gift",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "anjali"
+            },
+            {
+                "payments_transaction_amount": "600"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "how much amount do i have as balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "get 500 rupees from dad",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "dad"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "get"
+            }
+        ]
+    },
+    {
+        "text": "any offers if i do payment of 5000 to a person",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "i want to send 100000 rupees to druthi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "druthi"
+            },
+            {
+                "payments_transaction_amount": "100000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "please make a transaction of 600 rupees to ruthika",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "ruthika"
+            },
+            {
+                "payments_transaction_amount": "600"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "transaction"
+            }
+        ]
+    },
+    {
+        "text": "i approve the request",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "they have asked me to scan qr code and send 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan qr code"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "ajith",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "ajith"
+            }
+        ]
+    },
+    {
+        "text": "100 rupees payment",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send 500 to anjali",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "anjali"
+            },
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "request dr. neelam 500 rupees for sandwich delivery",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "dr. neelam"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "ask saurav to send 1500 rupees for the last night party share",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "saurav"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "ask"
+            }
+        ]
+    },
+    {
+        "text": "pay my utilities bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "utilities bill"
+            }
+        ]
+    },
+    {
+        "text": "transfer 400 to hussian",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "hussian"
+            },
+            {
+                "payments_transaction_amount": "400"
+            },
+            {
+                "payments_transaction_action": "transfer"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view all the offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "make a request to rajesh 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "rajesh"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me balance of the first account in your list",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "pay bescom 500 rupees",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "bescom"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "what's my correct balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "all right show the history for 5 months",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "history"
+            }
+        ]
+    },
+    {
+        "text": "i want to view the ips today",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ips "
+            }
+        ]
+    },
+    {
+        "text": "show me my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "please take 211 rupees from uncle",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "uncle"
+            },
+            {
+                "payments_transaction_amount": "211"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "can you check the offers of available",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "show my account balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance"
+            }
+        ]
+    },
+    {
+        "text": "approve my pending bill payment of 100 rupees to airtel",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "approve payment to amazon",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 10 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "ask paru to pay me thousand rupees",
+        "intent": "n/a",
+        "entities": [
+            {
+                "payments_transaction_action": "ask"
+            },
+            {
+                "payments_transaction_name": "paru"
+            },
+            {
+                "payments_transaction_amount": "thousand"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "scan and pay 211 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "211"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "400",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "400"
+            }
+        ]
+    },
+    {
+        "text": "how to see remaining balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "transfer 205 to my sister",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "my sister"
+            },
+            {
+                "payments_transaction_amount": "205"
+            },
+            {
+                "payments_transaction_action": "transfer"
+            }
+        ]
+    },
+    {
+        "text": "rahul",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "rahul"
+            }
+        ]
+    },
+    {
+        "text": "send 300 rupees to madhu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "madhu"
+            },
+            {
+                "payments_transaction_amount": "300"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "please donate 1100 rupees to this fund for treating india",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 3000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "3000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "pay my gas cylinder bill of 1000 rupees",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "gas cylinder bill"
+            }
+        ]
+    },
+    {
+        "text": "pay my cable bill for 252 rupees",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_transaction_action": "pay"
+            },
+            {
+                "payments_bill_type": "cable bill"
+            }
+        ]
+    },
+    {
+        "text": "po",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "pay my internet bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "internet bill"
+            },
+            {
+                "payments_transaction_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "i want to transfer 500 rupees through scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "transfer"
+            }
+        ]
+    },
+    {
+        "text": "send 108 rupees to nagesh ironwala",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "nagesh ironwala"
+            },
+            {
+                "payments_transaction_amount": "108"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "provide vijay 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "please send rajesh 250",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "rajesh"
+            },
+            {
+                "payments_transaction_amount": "250"
+            }
+        ]
+    },
+    {
+        "text": "i want to get 500 rupees from my sister",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "sister"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "get"
+            }
+        ]
+    },
+    {
+        "text": "i have act internet connection please pay 212 rupees outstanding balance for last month",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "act internet"
+            }
+        ]
+    },
+    {
+        "text": "show my bank balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "request 500 from neelam for sandwich delivery",
+        "intent": "no_intent",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_name": "neelam"
+            }
+        ]
+    },
+    {
+        "text": "transfer 10000 to evg abhi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "evg abhi"
+            },
+            {
+                "payments_transaction_amount": "10000"
+            },
+            {
+                "payments_transaction_action": "transfer"
+            }
+        ]
+    },
+    {
+        "text": "wire in 15000 to myself",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "myself"
+            },
+            {
+                "payments_transaction_amount": "15000"
+            }
+        ]
+    },
+    {
+        "text": "receive 5000 from vinayak",
+        "intent": "no_intent",
+        "entities": [
+            {
+                "payments_transaction_action": "receive"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_name": "vinayak"
+            }
+        ]
+    },
+    {
+        "text": "please request vishal to send me money which is of 200 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "vishal"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "would like to pay my gas bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "gas bill"
+            }
+        ]
+    },
+    {
+        "text": "pay my mobile bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "mobile bill"
+            }
+        ]
+    },
+    {
+        "text": "show my account balance for hdfc account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance"
+            }
+        ]
+    },
+    {
+        "text": "i want to donate 2000 rupees to the pradhana mantri yojana for gramina yojana",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "request 400 from anjali",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "anjali"
+            },
+            {
+                "payments_transaction_amount": "400"
+            }
+        ]
+    },
+    {
+        "text": "pay my fastag bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_transaction_action": "pay"
+            },
+            {
+                "payments_bill_type": "fastag bill"
+            }
+        ]
+    },
+    {
+        "text": "approve the pay request that i have from 0dha",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "send 500 rupees to dr. neelam for her dental consultation fees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "dr. neelam"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "open qr code to scan and pay 1000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "pay my education bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "education bill"
+            }
+        ]
+    },
+    {
+        "text": "donate 5000 rupees to the",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "pay my water bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "water bill"
+            }
+        ]
+    },
+    {
+        "text": "i want to invest in the nykaa ipo",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "can you donate 2000 rupees on my behalf to the pm care fund",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "accept payment from flipkart",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payment"
+            }
+        ]
+    },
+    {
+        "text": "check my bank balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "bank balance"
+            }
+        ]
+    },
+    {
+        "text": "pay my bill with bescom",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "bescom"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "approve the amount that i got request from my dad",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve "
+            }
+        ]
+    },
+    {
+        "text": "approval payment of 1000 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approval "
+            }
+        ]
+    },
+    {
+        "text": "make a payment through qr code",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "please approve my current payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "approve rahul request of 500 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "how much money is there in my bank",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "qr code scanner to pay to pay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            },
+            {
+                "payments_transaction_action": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "approve my current transaction",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "open the scanner and send 200 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "how to approve the payment from swiggy",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "hey donate 20000 to akshaya patra",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "last transaction",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction"
+            }
+        ]
+    },
+    {
+        "text": "please open the qr scanner of 1000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr scanner"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "donation to pm cares fund",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donation"
+            }
+        ]
+    },
+    {
+        "text": "open qr code",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "scan and pay for milk twenty one rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "wenty one"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "pay my electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "electricity bill"
+            }
+        ]
+    },
+    {
+        "text": "approve the mutual fund request for 3500 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "request 500 rupees to qr code",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "infinite",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "pay tata sky bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "tata sky bill"
+            }
+        ]
+    },
+    {
+        "text": "show offers related to credit card",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "open code scanner and pay 20 bucks to the vendor",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "20"
+            },
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "i would like to make donation to pm cares fund",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donation"
+            }
+        ]
+    },
+    {
+        "text": "approve the pending request",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "approve my current payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payments"
+            }
+        ]
+    },
+    {
+        "text": "airtel bill payment",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "airtel bill"
+            },
+            {
+                "payments_bill_action": "payment"
+            }
+        ]
+    },
+    {
+        "text": "go to scanner and send 222 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            },
+            {
+                "payments_transaction_amount": "222"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "pay my gas bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "gas bill"
+            }
+        ]
+    },
+    {
+        "text": "pull up qr code scanner i want to pay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr code"
+            },
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "show me my transactions",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transactions"
+            }
+        ]
+    },
+    {
+        "text": "i want to pay vishnu 1500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vishnu"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "scan and pay 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "please request 1500 rupees from saurabh",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "saurabh"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "clear my electricity bill dues",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "electricity bill "
+            }
+        ]
+    },
+    {
+        "text": "approve water city bill",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "water city bill"
+            }
+        ]
+    },
+    {
+        "text": "i wanted to pay electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "electricity bill"
+            }
+        ]
+    },
+    {
+        "text": "scan and send",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "donate 500 to xy foundation",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_action": "donate"
+            }
+        ]
+    },
+    {
+        "text": "i want to 500 rupees to paakashala",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "paakashala"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to make a transaction to ajay 400 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "ajay"
+            },
+            {
+                "payments_transaction_amount": "400"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "transaction"
+            }
+        ]
+    },
+    {
+        "text": "please open qr scanner for 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "please approve a payment of 100000 rupees against the hospitals bills",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "3400 pnb account please tell the balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "approve the pending bills",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "pay my phone bill to airtel",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_transaction_action": "pay"
+            },
+            {
+                "payments_bill_type": "phone bill"
+            }
+        ]
+    },
+    {
+        "text": "i would like to make a donation to akshaya patra",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_action": "donation"
+            }
+        ]
+    },
+    {
+        "text": "please show qr code scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "1000",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "1000"
+            }
+        ]
+    },
+    {
+        "text": "how much is my electricity bill please pay that",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "electricity bill"
+            }
+        ]
+    },
+    {
+        "text": "donate some money to akshaya patra",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_action": "donate"
+            }
+        ]
+    },
+    {
+        "text": "show me my transactions",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transactions"
+            }
+        ]
+    },
+    {
+        "text": "can i received 5000000 from shiva sir",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "received"
+            },
+            {
+                "payments_transaction_amount": "5000000"
+            },
+            {
+                "payments_transaction_name": "shiva"
+            }
+        ]
+    },
+    {
+        "text": "open scanner to pay 10 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "show my current balance of hdfc bank account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "please approve my pending payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "approve a payment of 100 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "approve payment to amazon",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "request 50000 salary from kumar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_amount": "50000"
+            },
+            {
+                "payments_transaction_name": "kumar"
+            }
+        ]
+    },
+    {
+        "text": "approve the request for 200 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 9000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "9000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "donate 5000 rupees to shekar ashram",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "donate 600 rupees to unicef",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate "
+            }
+        ]
+    },
+    {
+        "text": "pay 5000 rupees and open scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "open qr and pay 375 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr"
+            },
+            {
+                "payments_transaction_amount": "375"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "pay 100 rupees through qr scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "pay "
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "400",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "400"
+            }
+        ]
+    },
+    {
+        "text": "scan and pay 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "check my account balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance"
+            }
+        ]
+    },
+    {
+        "text": "please ask dr. aishwarya to send 1000 rupees as a refund",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "dr. aishwarya"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me ipo",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "transfer 10000",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10000"
+            },
+            {
+                "payments_transaction_action": "transfer"
+            }
+        ]
+    },
+    {
+        "text": "send 200 rupees to my dad",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_name": "dad"
+            },
+            {
+                "payments_transaction_action": "send"
+            }
+        ]
+    },
+    {
+        "text": "1000 from jagan",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "jagan"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            }
+        ]
+    },
+    {
+        "text": "show me any offers which are there in the app",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "accept payment from razorpay",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payment"
+            }
+        ]
+    },
+    {
+        "text": "pay my electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "electricity bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "request 300 rupees from vishnu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "vishnu"
+            },
+            {
+                "payments_transaction_amount": "300"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send rupee 102.50 paise to pandya sathya prakash",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "pandya sathya prakash"
+            },
+            {
+                "payments_transaction_amount": "102.50"
+            },
+            {
+                "payments_transaction_currency": "paise"
+            },
+            {
+                "payments_transaction_currency": "rupee"
+            }
+        ]
+    },
+    {
+        "text": "pay 500 rupees has dth bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_transaction_action": "pay"
+            },
+            {
+                "payments_bill_type": "dth bill"
+            }
+        ]
+    },
+    {
+        "text": "pull up qr code scanner i want to pay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "request 10000 as salary from",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_amount": "10000"
+            }
+        ]
+    },
+    {
+        "text": "request 5000 from ankitha",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "ankitha"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            }
+        ]
+    },
+    {
+        "text": "please pay 50000 to",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "50000"
+            },
+            {
+                "payments_transaction_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "send 200 to dr. aishwarya for her consultation fees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "dr. aishwarya"
+            },
+            {
+                "payments_transaction_amount": "200"
+            }
+        ]
+    },
+    {
+        "text": "send 300 to vijay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "300"
+            }
+        ]
+    },
+    {
+        "text": "send 205 rupees to abhay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "abhay"
+            },
+            {
+                "payments_transaction_amount": "205"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "request 200 rupees from shikha",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "shikha"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "ask sourab to send me back 1500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "ask"
+            },
+            {
+                "payments_transaction_name": "sourab"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to clear my dth outstanding",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "dth"
+            }
+        ]
+    },
+    {
+        "text": "3400 ha",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "3400"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "i would like to see my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my balance"
+            }
+        ]
+    },
+    {
+        "text": "please pay my minimum amount for my credit card bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "credit card bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "view my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "request 300 from satish",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "satish"
+            },
+            {
+                "payments_transaction_amount": "300"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "send 1000 to satish",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "satish"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            }
+        ]
+    },
+    {
+        "text": "go and ask rajesh to pay 400 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "rajesh"
+            },
+            {
+                "payments_transaction_amount": "400"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "ask"
+            }
+        ]
+    },
+    {
+        "text": "check the ipo listed in my app",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "i would like to make a donation to pm cares fund",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donation"
+            }
+        ]
+    },
+    {
+        "text": "show me my x transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "request vinayak to transfer 2000 to me",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "vinayak"
+            },
+            {
+                "payments_transaction_amount": "2000"
+            }
+        ]
+    },
+    {
+        "text": "please pay the minimum of 500 rupees for my credit card bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "credit card bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "request 50200 rupees from kumar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "kumar"
+            },
+            {
+                "payments_transaction_amount": "50200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "request lohith to transfer rupees 1250 to me",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "lohith"
+            },
+            {
+                "payments_transaction_amount": "1250"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to send 200.50 rupees to the maid",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "maid"
+            },
+            {
+                "payments_transaction_amount": "200.5"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show starter and put 21 rupees in the amount",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "21"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "microphone permission",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "send 5000 to amithanshu bhaiya",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "amithanshu"
+            }
+        ]
+    },
+    {
+        "text": "how do i gift my mother 5000 rupees amount",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "mother"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me my last transaction",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_navigation_target": "my last transaction"
+            }
+        ]
+    },
+    {
+        "text": "make a request to vijay 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to pay my gas bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "gas bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "request 905 from madhuri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "madhuri"
+            },
+            {
+                "payments_transaction_amount": "905"
+            }
+        ]
+    },
+    {
+        "text": "what is the last payment id",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payment"
+            }
+        ]
+    },
+    {
+        "text": "money to agna",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "agna"
+            }
+        ]
+    },
+    {
+        "text": "send 20000 as a loan to shailaja",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "shailaja"
+            },
+            {
+                "payments_transaction_amount": "20000"
+            }
+        ]
+    },
+    {
+        "text": "donate 50000 to dr. praveens eye hospital",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_amount": "50000"
+            },
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "maa",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "maa"
+            }
+        ]
+    },
+    {
+        "text": "show me the offers running on my current bank account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "request 300 from ajay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "ajay"
+            },
+            {
+                "payments_transaction_amount": "300"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to kumar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "kumar"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to view",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "please do a donation to pmkr fund 500 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donation"
+            }
+        ]
+    },
+    {
+        "text": "pay my october month  bill of 1126 rupees to water supplier",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "water supplier"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "i want to know how much money i have in hdfc account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "hdfc account"
+            }
+        ]
+    },
+    {
+        "text": "500",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "donate 100000 to sankara eye foundation",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "i want to scan",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "scan"
+            }
+        ]
+    },
+    {
+        "text": "happy to donate 10000 dollars to the needy person",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "pay 10.5 rupees to pani",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "pani"
+            },
+            {
+                "payments_transaction_amount": "10.5"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "pay "
+            }
+        ]
+    },
+    {
+        "text": "send 300 rupees to kumar as a gift",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "kumar"
+            },
+            {
+                "payments_transaction_amount": "300"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "make a request of 500",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "i should get 200 rupees from satish",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "satish"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "get"
+            }
+        ]
+    },
+    {
+        "text": "i would like to check all the active ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "active ipos"
+            }
+        ]
+    },
+    {
+        "text": "can we donate 5000 to my roommate",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "send 373.2 to shubham",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "shubham"
+            },
+            {
+                "payments_transaction_amount": "373.2"
+            }
+        ]
+    },
+    {
+        "text": "600 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "600"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send a gift",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            }
+        ]
+    },
+    {
+        "text": "history of payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "history of payments"
+            }
+        ]
+    },
+    {
+        "text": "can you please send",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            }
+        ]
+    },
+    {
+        "text": "pay my insurance bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "insurance bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "open scanner",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "show me my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my balance"
+            }
+        ]
+    },
+    {
+        "text": "view my current account balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my current account balance"
+            }
+        ]
+    },
+    {
+        "text": "how many things you can do for me",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "open dth",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "dth"
+            }
+        ]
+    },
+    {
+        "text": "donate 1000 rupees to akshaya patra",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "send 5000 to harsh",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "harsh"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            }
+        ]
+    },
+    {
+        "text": "show my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "open my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "payment history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payment history"
+            }
+        ]
+    },
+    {
+        "text": "i want to ask one lockerhood from shubham",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "ask"
+            },
+            {
+                "payments_transaction_name": "shubham"
+            }
+        ]
+    },
+    {
+        "text": "check my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my balance"
+            }
+        ]
+    },
+    {
+        "text": "scan 425 rupees for grocery",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_name": "grocery"
+            },
+            {
+                "payments_transaction_amount": "425"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to pay my electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "electricity bill"
+            },
+            {
+                "payments_bill_action": "pay "
+            }
+        ]
+    },
+    {
+        "text": "harsh",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "harsh"
+            }
+        ]
+    },
+    {
+        "text": "request money from",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            }
+        ]
+    },
+    {
+        "text": "harsh",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "harsh"
+            }
+        ]
+    },
+    {
+        "text": "show all the ipos listing",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipos"
+            }
+        ]
+    },
+    {
+        "text": "view my account balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance"
+            }
+        ]
+    },
+    {
+        "text": "can i see the latest ipo",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "view my ipo",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "view my bank balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "bank balance"
+            }
+        ]
+    },
+    {
+        "text": "i want to check my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my balance"
+            }
+        ]
+    },
+    {
+        "text": "gift mom",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "mom"
+            }
+        ]
+    },
+    {
+        "text": "send 50 to subham",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "subham"
+            },
+            {
+                "payments_transaction_amount": "50"
+            }
+        ]
+    },
+    {
+        "text": "request 10000 rupees from slanglabs as december bonus",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "slanglabs"
+            },
+            {
+                "payments_transaction_amount": "10000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "can i see the latest ipo",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "scan 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "donations",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donations"
+            }
+        ]
+    },
+    {
+        "text": "transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "send birthday gift of 3200 to sita",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "sita"
+            },
+            {
+                "payments_transaction_amount": "3200"
+            }
+        ]
+    },
+    {
+        "text": "open scanner",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "akshara international school",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "what is my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "my balance"
+            }
+        ]
+    },
+    {
+        "text": "request 1000 rupees from aditya",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "aditya"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "green lance high school",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "open the qr scanner",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "qr scanner"
+            }
+        ]
+    },
+    {
+        "text": "kyc",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "kyc"
+            }
+        ]
+    },
+    {
+        "text": "pin balance enquiry payment",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance enquiry"
+            }
+        ]
+    },
+    {
+        "text": "i want to see my transactions",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transactions"
+            }
+        ]
+    },
+    {
+        "text": "show my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "show my transaction records",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction records"
+            }
+        ]
+    },
+    {
+        "text": "send 900 rupees to hotel",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "hotel"
+            },
+            {
+                "payments_transaction_amount": "900"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "500",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "request 6500 from ramesh",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "ramesh"
+            },
+            {
+                "payments_transaction_amount": "6500"
+            }
+        ]
+    },
+    {
+        "text": "send 12 rupee to harsh",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "harsh"
+            },
+            {
+                "payments_transaction_amount": "12"
+            },
+            {
+                "payments_transaction_currency": "rupee"
+            }
+        ]
+    },
+    {
+        "text": "pin broadband",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "i want to send",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            }
+        ]
+    },
+    {
+        "text": "send 500 to subham",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "subham"
+            },
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "10 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to pay my airtel bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "airtel bill"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "approve my pending payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payments"
+            }
+        ]
+    },
+    {
+        "text": "approve my payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payments"
+            }
+        ]
+    },
+    {
+        "text": "request you to show me my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "anu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "anu"
+            }
+        ]
+    },
+    {
+        "text": "request you to view my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view all the offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "open qr code to make a transaction of 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to anjali",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "anjali"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me the last 10 transactions",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transactions"
+            }
+        ]
+    },
+    {
+        "text": "gowri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "gowri"
+            }
+        ]
+    },
+    {
+        "text": "10000",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10000"
+            }
+        ]
+    },
+    {
+        "text": "shalu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "shalu"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 10 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "just open the scanner dude",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scanner"
+            }
+        ]
+    },
+    {
+        "text": "open the qr code",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr code"
+            }
+        ]
+    },
+    {
+        "text": "request money from dad 205 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "dad"
+            },
+            {
+                "payments_transaction_amount": "205"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me the ongoing ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipos"
+            }
+        ]
+    },
+    {
+        "text": "i sent money to my friend  i want to get money back from him please request vishal",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "vishal"
+            }
+        ]
+    },
+    {
+        "text": "current balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "i would like to check all the offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "send my mom 2520 bucks",
+        "intent": "no_intent",
+        "entities": [
+            {
+                "payments_transaction_name": "mom"
+            },
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_amount": "2520"
+            }
+        ]
+    },
+    {
+        "text": "show me how to send 100 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to vishnu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "vishnu"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "10000",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "10000"
+            }
+        ]
+    },
+    {
+        "text": "send 200 rupees to amar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "amar"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "make payment against",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "payment"
+            }
+        ]
+    },
+    {
+        "text": "hariharan as gift",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_name": "hariharan"
+            },
+            {
+                "payments_transaction_action": "gift"
+            }
+        ]
+    },
+    {
+        "text": "send 4000 to ravi taneja",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_amount": "4000"
+            },
+            {
+                "payments_transaction_name": "ravi taneja"
+            }
+        ]
+    },
+    {
+        "text": "request 500 rupees from abhinav jdj",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "abhinav jdj"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "send 3000 rupees to lohith",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "lohith"
+            },
+            {
+                "payments_transaction_amount": "3000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "pay my dth bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "dth bill"
+            }
+        ]
+    },
+    {
+        "text": "can u check current ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipos"
+            }
+        ]
+    },
+    {
+        "text": "make couple payment to airtel of 800 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "airtel"
+            },
+            {
+                "payments_transaction_amount": "800"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "payment"
+            }
+        ]
+    },
+    {
+        "text": "i want to check my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "balance"
+            }
+        ]
+    },
+    {
+        "text": "show me the list of active ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipos"
+            }
+        ]
+    },
+    {
+        "text": "i want to see my transaction",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction"
+            }
+        ]
+    },
+    {
+        "text": "i want to invest in paytm ipo",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_name": "paytm ipo"
+            },
+            {
+                "payments_transaction_name": "invest"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 3000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "3000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "show me listed ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "ipos"
+            }
+        ]
+    },
+    {
+        "text": "500",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "request 501 rupees from giri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "giri"
+            },
+            {
+                "payments_transaction_amount": "501"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to view the listed ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "view the listed ipos"
+            }
+        ]
+    },
+    {
+        "text": "please request maa to send me 200 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "maa"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me all the offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "approve a payment of 2000 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_transaction_action": "payment"
+            },
+            {
+                "payments_transaction_amount": "2000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "please send 5000 to abhishek",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "abhishek"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            }
+        ]
+    },
+    {
+        "text": "request 3000 from amar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "amar"
+            },
+            {
+                "payments_transaction_amount": "3000"
+            }
+        ]
+    },
+    {
+        "text": "pay 1000000 rupees to myself",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "myself"
+            },
+            {
+                "payments_transaction_amount": "1000000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "they are sound to pay 500 has a representative so please pay it",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "pay"
+            },
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "request 365 from madhu",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "madhu"
+            },
+            {
+                "payments_transaction_amount": "365"
+            }
+        ]
+    },
+    {
+        "text": "what are the offers of paying water bill through the app",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "water bill "
+            },
+            {
+                "payments_bill_action": "paying"
+            }
+        ]
+    },
+    {
+        "text": "pay my hospital bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "hospital bill"
+            }
+        ]
+    },
+    {
+        "text": "what is the current balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "request 1000 rupees from papa",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "papa"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "open the scanner to pay 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "open the scanner"
+            }
+        ]
+    },
+    {
+        "text": "active ipos",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "request 900 hundred from kumar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "kumar"
+            },
+            {
+                "payments_transaction_amount": "900"
+            }
+        ]
+    },
+    {
+        "text": "pay my fast tag bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": " fast tag bill"
+            }
+        ]
+    },
+    {
+        "text": "show me my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "500",
+        "intent": "payments_transaction",
+        "entities": []
+    },
+    {
+        "text": "ask lohith to pay me 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "lohith"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "ask"
+            }
+        ]
+    },
+    {
+        "text": "pay my broadband bill to airtel",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "broadband bill"
+            }
+        ]
+    },
+    {
+        "text": "please open a qr scanner of 50 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "50"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "open a qr scanner"
+            }
+        ]
+    },
+    {
+        "text": "give some 100 rupees to vijay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "jagan",
+        "intent": "smalltalk_greeting",
+        "entities": [
+            {
+                "payments_transaction_name": "jagan"
+            }
+        ]
+    },
+    {
+        "text": "pay 350000 rupees to my father",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "my father"
+            },
+            {
+                "payments_transaction_amount": "350000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to adity",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "adity"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to view payment offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "payment offers"
+            }
+        ]
+    },
+    {
+        "text": "in cash back if i pay dth bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "dth bill\n"
+            }
+        ]
+    },
+    {
+        "text": "pay vodafone bill for 500 rupees",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "vodafone"
+            },
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_transaction_amount": ""
+            },
+            {
+                "payments_transaction_currency": ""
+            }
+        ]
+    },
+    {
+        "text": "i need to get 100 rupees from satish kumar",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "satish kumar"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": ""
+            }
+        ]
+    },
+    {
+        "text": "open scan and pay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "scan and pay"
+            }
+        ]
+    },
+    {
+        "text": "pay my internet bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "internet bill"
+            }
+        ]
+    },
+    {
+        "text": "pay my health insurance bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": " health insurance bill"
+            }
+        ]
+    },
+    {
+        "text": "view offers of gas payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers of gas payments"
+            }
+        ]
+    },
+    {
+        "text": "view ipos lists",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "i would like to check all the active ipos",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "pay pending payment request",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "to aai",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": ""
+            }
+        ]
+    },
+    {
+        "text": "can you transfer 100 rupees to vijay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": ""
+            }
+        ]
+    },
+    {
+        "text": "i would like to donate 2000000 to world wildlife fund",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "send 300 to ajay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "ajay"
+            },
+            {
+                "payments_transaction_amount": "300"
+            }
+        ]
+    },
+    {
+        "text": "send 1000 rupees to pandey satya prakash",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "pandey satya prakash"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show my savings account balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "how many request do you have can you approve second 1",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "open qr code scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_navigation_target": "qr code scanner"
+            },
+            {
+                "payments_transaction_action": "qr code scanner\n"
+            }
+        ]
+    },
+    {
+        "text": "show me all the active ipos",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "send 200 to abhay for badminton game",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "abhay"
+            },
+            {
+                "payments_transaction_amount": "200"
+            }
+        ]
+    },
+    {
+        "text": "5541 account balance tell me",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "account balance"
+            }
+        ]
+    },
+    {
+        "text": "approve payment for television",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve payment"
+            }
+        ]
+    },
+    {
+        "text": "transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to my mother",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "mother"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "recharge my phone for 479 in airtel",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "479"
+            }
+        ]
+    },
+    {
+        "text": "send 2500 rupees to raji",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "raji"
+            },
+            {
+                "payments_transaction_amount": "2500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "show me payment offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "pay my telephone bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "telephone bill"
+            }
+        ]
+    },
+    {
+        "text": "how to scan qr code",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": ""
+            }
+        ]
+    },
+    {
+        "text": "make a bill payment to bescom",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "pay water and electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "water and electricity bill"
+            }
+        ]
+    },
+    {
+        "text": "show my current balance of punjab national bank account",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "send 500 dollars to vijay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": ""
+            }
+        ]
+    },
+    {
+        "text": "approved pending payment from croma",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "1000 from jagan",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "jagan"
+            },
+            {
+                "payments_transaction_amount": "1000"
+            }
+        ]
+    },
+    {
+        "text": "send 200 rupees to giri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "giri"
+            },
+            {
+                "payments_transaction_amount": "200"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i want to see balance of all my accounts",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "donate 1000 rupees to nanhi pari",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "donate 2000 rupees to pm care fund for corona relief",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "donate 6000 rupees to pm care fund",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "donate"
+            }
+        ]
+    },
+    {
+        "text": "approve payment request from bigbasket",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve payment"
+            }
+        ]
+    },
+    {
+        "text": "0",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "pay 600 rupees as water bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "water bill"
+            }
+        ]
+    },
+    {
+        "text": "request 450 from adithi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "adithi"
+            },
+            {
+                "payments_transaction_amount": "450"
+            }
+        ]
+    },
+    {
+        "text": "ask saurabh to send me 1500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "saurabh"
+            },
+            {
+                "payments_transaction_amount": "1500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "ask"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 4495 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "4495"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "please show my transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "ask abhay to send 150 rupees for sharing the shatl cost",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "abhay"
+            },
+            {
+                "payments_transaction_amount": "150"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "ask"
+            }
+        ]
+    },
+    {
+        "text": "shanthi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "shanthi\n"
+            }
+        ]
+    },
+    {
+        "text": "200",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "200"
+            }
+        ]
+    },
+    {
+        "text": "water bill amounting to 800 rupees please pay",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "water"
+            },
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "water bill"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 5000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan "
+            }
+        ]
+    },
+    {
+        "text": "please open the qr scanner of rupees 1000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "1000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": ""
+            }
+        ]
+    },
+    {
+        "text": "pay my electricity bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "electricity"
+            },
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": "electricity bill"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view my balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "send 100 rupees to ajay",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "ajay"
+            },
+            {
+                "payments_transaction_amount": "100"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "can you gift 200 rupees voucher to abc",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": ""
+            },
+            {
+                "payments_transaction_currency": ""
+            },
+            {
+                "payments_transaction_name": ""
+            }
+        ]
+    },
+    {
+        "text": "transaction history",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "transaction history"
+            }
+        ]
+    },
+    {
+        "text": "place a request to receive money from abhi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "abhi"
+            }
+        ]
+    },
+    {
+        "text": "send 305 to giri",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "giri"
+            },
+            {
+                "payments_transaction_amount": "305"
+            }
+        ]
+    },
+    {
+        "text": "pay my dth bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_action": "pay"
+            },
+            {
+                "payments_bill_type": ""
+            }
+        ]
+    },
+    {
+        "text": "i am low on account balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "show my bank balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "bank balance"
+            }
+        ]
+    },
+    {
+        "text": "approve vijay's 200 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "approve"
+            }
+        ]
+    },
+    {
+        "text": "can i have 10000 to pay my bills from nagi",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "nagi"
+            },
+            {
+                "payments_transaction_amount": "10000"
+            }
+        ]
+    },
+    {
+        "text": "credit 44000 to myself",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "myself"
+            },
+            {
+                "payments_transaction_amount": "44000"
+            }
+        ]
+    },
+    {
+        "text": "show my bank balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "bank balance"
+            }
+        ]
+    },
+    {
+        "text": "request sharda",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "request"
+            },
+            {
+                "payments_transaction_name": "sharda"
+            }
+        ]
+    },
+    {
+        "text": "send 5000 to",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            }
+        ]
+    },
+    {
+        "text": "can i check the offers available",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "29 november please send shikha 200",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "shikha"
+            },
+            {
+                "payments_transaction_amount": "200"
+            }
+        ]
+    },
+    {
+        "text": "please donate 1100 rupees",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": ""
+            }
+        ]
+    },
+    {
+        "text": "pay my sbi credit card bill",
+        "intent": "payments_bill",
+        "entities": [
+            {
+                "payments_bill_type": "credit card"
+            },
+            {
+                "payments_bill_action": "pay"
+            }
+        ]
+    },
+    {
+        "text": "send 1500 to saurabh for last night party share",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_amount": ""
+            },
+            {
+                "payments_transaction_name": ""
+            }
+        ]
+    },
+    {
+        "text": "show me some offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "scan and send 500 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "500"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            },
+            {
+                "payments_transaction_action": "scan"
+            }
+        ]
+    },
+    {
+        "text": "view recent ipos",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "ipo",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "check any offers are there",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "qr code scanner",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "qr code scanner"
+            }
+        ]
+    },
+    {
+        "text": "gift shikha 2 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "shikha"
+            },
+            {
+                "payments_transaction_amount": "2"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "so happy to give away 20000 to the winner",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "retail",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "hey gift",
+        "intent": "smalltalk_greeting",
+        "entities": []
+    },
+    {
+        "text": "i would like to view all the ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "view all the ipos"
+            }
+        ]
+    },
+    {
+        "text": "500",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "give away 50000 to pm cares fund",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "i want to say ok from payment to bigbasket",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "501",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "501"
+            }
+        ]
+    },
+    {
+        "text": "gift sahil 2000",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "20",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "check the cash back of the electricity payment",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "cash back of the electricity payment"
+            }
+        ]
+    },
+    {
+        "text": "501",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_amount": "501"
+            }
+        ]
+    },
+    {
+        "text": "ipos",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "show me the latest ipos",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "hey what offers do you have",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "pay",
+        "intent": "payments_transaction",
+        "entities": []
+    },
+    {
+        "text": "please transfer 200000 rupee from my mom",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "mom"
+            },
+            {
+                "payments_transaction_amount": "200000"
+            },
+            {
+                "payments_transaction_currency": "rupee"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view if there any offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "scanner",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "500",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "hey can i gift all my account balance",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "all my account balance"
+            }
+        ]
+    },
+    {
+        "text": "share 20000 dollars to red cross",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "please open a qr to receive 500 from the amritanshu bhaiya",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "amritanshu bhaiya"
+            },
+            {
+                "payments_transaction_amount": "500"
+            }
+        ]
+    },
+    {
+        "text": "send rupee 5000 to amitash bhaiya",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_action": "send"
+            },
+            {
+                "payments_transaction_name": "amitash bhaiya"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_currency": "rupee"
+            }
+        ]
+    },
+    {
+        "text": "i want to gift 5000 rupees for her birthday",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "her"
+            },
+            {
+                "payments_transaction_amount": "5000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "i would like to view all the active ipos",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "view all the active ipos"
+            }
+        ]
+    },
+    {
+        "text": "approve my ipo request of 500 rupees for chemicon industry",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "show me what all ipos are active",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "show me offers related to payments",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "gift a 100 rupees to dhyanesh",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "show me active ipos list",
+        "intent": "no_intent",
+        "entities": []
+    },
+    {
+        "text": "what are the active ipos that i can invest my money in",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "active ipos"
+            }
+        ]
+    },
+    {
+        "text": "show offers related to hdfc credit card",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers related to hdfc credit card"
+            }
+        ]
+    },
+    {
+        "text": "i want to invest in ipo",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "ipo"
+            }
+        ]
+    },
+    {
+        "text": "gift vijay 6000 rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vijay"
+            },
+            {
+                "payments_transaction_amount": "6000"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "hey pay all the pending request",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "i would like to make a donation to akshaya patra",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "how much have i spent in last month",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "bank balance",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "bank balance"
+            }
+        ]
+    },
+    {
+        "text": "give tulsi a gift of 600 rupees",
+        "intent": "payments_navigation",
+        "entities": []
+    },
+    {
+        "text": "ask vaishnav to pay five hundred rupees",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "vaishnav"
+            },
+            {
+                "payments_transaction_currency": "rupees"
+            }
+        ]
+    },
+    {
+        "text": "can u gift 100 bucks to my friend",
+        "intent": "payments_transaction",
+        "entities": [
+            {
+                "payments_transaction_name": "friend"
+            },
+            {
+                "payments_transaction_amount": "100"
+            }
+        ]
+    },
+    {
+        "text": "show me offers",
+        "intent": "payments_navigation",
+        "entities": [
+            {
+                "payments_navigation_target": "offers"
+            }
+        ]
+    },
+    {
+        "text": "go ahead and pay all the pending request",
+        "intent": "payments_navigation",
+        "entities": []
+    }
+]
