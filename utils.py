@@ -145,8 +145,8 @@ def find_true_tag(word, expected_entities):
 
 
 class Config(object):
-    def __init__(self, tier):
-        with open('asr_config.yaml') as f:
+    def __init__(self, tier, config_file='asr_config.yaml'):
+        with open(config_file) as f:
             common = yaml.safe_load(f)
         self.tier = tier
         self.host = common.get('hosts', {}).get(self.tier, "")

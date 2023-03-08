@@ -265,10 +265,17 @@ class Driver(object):
 
 
 def main(tier):
-    config = Config(tier=tier)
+    config = Config(tier=tier, config_file='asr_config.yaml')
     driver = Driver(config)
     driver.run()
 
+    config2 = Config(tier=tier, config_file='asr_config_nemo.yaml')
+    driver2 = Driver(config2)
+    driver2.run()
+
+    config3 = Config(tier=tier, config_file='asr_config_np.yaml')
+    driver3 = Driver(config3)
+    driver3.run()
 
 def parse_args():
     parser = argparse.ArgumentParser()
