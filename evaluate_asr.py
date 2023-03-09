@@ -37,12 +37,14 @@ class Driver(object):
         asr_hints_file = self.config.config['asr_hints_file']
         self.asr_hints = self.read_asr_hints(asr_hints_file)
         self.base_url = self.config.config['base_url']
+        self.dropped_idx = []
         if self.use_nemo:
             from nemo_text_processing.inverse_text_normalization.inverse_normalize import InverseNormalizer
-            self.inverse_normalizer  = InverseNormalizer
+            self.inverse_normalizer  = InverseNormalizer(lang='en') 
         if self.use_url is False:
             self.files = os.listdir(self.directory)
         else:
+            pass
             print("Checking and dropping wrong URLs")
             self.dropped_idx = self.check_url_exists()
             self.df = self.df.drop(self.dropped_idx)
@@ -69,26 +71,43 @@ class Driver(object):
         string = re.sub(r'[()]', ' ', string)
         return string.strip().lower()
 
-    def filter_entities(self, responses):
-        for item in responses:
-            _filter = [
-                'payments_bill_type',
-                'payments_bill_action',
-                'payments_navigation_target',
-                'payments_transaction_action',
-                'payments_transaction_name',
-                'payments_transaction_amount'
-            ]
+    def filter_entities(self, responses, pred_response=False):
+        _filter = [
+            'payments_bill_type',
+            'payments_bill_action',
+            'payments_navigation_target',
+            'payments_transaction_action',
+            'payments_transaction_name',
+            'payments_transaction_amount'
+        ]
+
+        _responses = responses
+
+        for i, item in enumerate(_responses):
 
             ent = []
-            for i in item["entities"]:
-                n = next(iter(i))
-                if n in _filter:
-                    ent.append(i)
+            if pred_response:
+                if len(item["entities"]) > 0:
+                    obj = {}
+                    for k, v in item["entities"][0].items():
+                        if k in _filter:
+                            obj[k] = v
 
-            item["entities"] = ent
+                    ent.append(obj)
+            else:
+                for x in item["entities"]:
+                    n = list(x.keys())[0] 
+                    if n in _filter:
+                        ent.append(x)
 
-        return responses
+            if len(ent) > 0:
+                item["entities"] = ent
+            else:
+                item["entities"] = [{}]
+
+            _responses[i] = item
+
+        return _responses
 
     def transform_text(self, text):
         out = text
@@ -256,6 +275,7 @@ class Driver(object):
             self.df[engine + '_transcription'] = predicted
             self.df[engine + '_wer'] = wers
             pred_responses, _ = self.config.send_and_time_request(self.df[engine + '_transcription'])   # noqa
+            pred_responses = self.filter_entities(pred_responses, pred_response=True)
             for i, (expected, predicted) in enumerate(tzip(reference_responses, pred_responses)):         # noqa
                 asr_score = self.metrics.compute_asr_score(expected, predicted)
                 score_list.append(asr_score)
