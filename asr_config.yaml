@@ -31,4 +31,4 @@ asr_hints_file: 'payments_asr_hints.json'
 use_slang_normalizer: False
 use_nemo: False
 use_number_parser: False
-bhashini_ip: "34.143.161.153"
+bhashini_ip: "34.143.236.218"

@@ -18,9 +18,13 @@ import urllib.request
 from subprocess import PIPE, Popen
 from slanglabs_nlu.entity_extraction.parsers import parse_numbers
 
+hypothesis_cache = {}
+dropped_idx = []
+urls_checked = False
 
 class Driver(object):
-    def __init__(self, config):
+    def __init__(self, config): 
+        global urls_checked, dropped_idx
         self.config = config
         file_name = self.config.config['data']
         self.df = pd.read_csv(file_name)
@@ -45,11 +49,13 @@ class Driver(object):
             self.files = os.listdir(self.directory)
         else:
             pass
-            print("Checking and dropping wrong URLs")
-            self.dropped_idx = self.check_url_exists()
-            self.df = self.df.drop(self.dropped_idx)
-            print(self.dropped_idx)
-            print(f"Dropped {len(self.dropped_idx)} URLs. {len(self.df)} URLs left") # noqa
+            if urls_checked == False:
+                print("Checking and dropping wrong URLs")
+                dropped_idx = self.check_url_exists()
+                urls_checked = True
+            self.df = self.df.drop(dropped_idx)
+            print(dropped_idx)
+            print(f"Dropped {len(dropped_idx)} URLs. {len(self.df)} URLs left") # noqa
         self.asr_engines = self.config.config['engines']
 
     def check_url_exists(self):
@@ -246,7 +252,7 @@ class Driver(object):
     def run(self):
         with open(self.dump_file) as f:
             reference_responses = json.load(f)
-        reference_responses = [res for i, res in enumerate(reference_responses) if i not in self.dropped_idx]   # noqa
+        reference_responses = [res for i, res in enumerate(reference_responses) if i not in dropped_idx]   # noqa
         reference_responses = self.filter_entities(reference_responses)
         for engine in self.asr_engines:
             print(f"Computing WER for {engine}")
@@ -262,7 +268,16 @@ class Driver(object):
                 else:
                     filepath = os.path.join(self.directory, f + '.wav')
                 try:
-                    hypothesis = self.transcript_audio(filepath, engine)
+                    check_hypothesis_cache = hypothesis_cache.get(engine)
+                    if check_hypothesis_cache is None:
+                        hypothesis_cache.update({engine:[]})
+
+                    if len(hypothesis_cache.get(engine)) == len(reference_responses):
+                        hypothesis = hypothesis_cache[engine][i]
+                    else:
+                        hypothesis = self.transcript_audio(filepath, engine)
+                        hypothesis_cache[engine].append(hypothesis)
+
                     hypothesis = self.transform_text(hypothesis)
                     reference = self.transform_text(reference)
                     wer = jiwer.wer(reference, hypothesis)
