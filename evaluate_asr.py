@@ -27,7 +27,7 @@ class Driver(object):
         global urls_checked, dropped_idx
         self.config = config
         file_name = self.config.config['data']
-        self.df = pd.read_csv(file_name)
+        self.df = pd.read_csv(file_name)[:10]
         # self.df = self.df.head(250)
         self.dump_file = self.config.config['reference_dump']
         self.results_dump_file = self.config.config['results_dump']
@@ -77,42 +77,37 @@ class Driver(object):
         string = re.sub(r'[()]', ' ', string)
         return string.strip().lower()
 
+    
     def filter_entities(self, responses, pred_response=False):
         _filter = [
             'payments_bill_type',
             'payments_bill_action',
             'payments_navigation_target',
             'payments_transaction_action',
-            'payments_transaction_name',
+            'payments_name',
             'payments_transaction_amount'
         ]
 
         _responses = responses
-
         for i, item in enumerate(_responses):
-
             ent = []
-            if pred_response:
-                if len(item["entities"]) > 0:
-                    obj = {}
+            if len(item["entities"]) > 0:
+                obj = {}
+                if pred_response:
                     for k, v in item["entities"][0].items():
                         if k in _filter:
                             obj[k] = v
+                else:
+                    for k, v in item["entities"].items():
+                        if k in _filter:
+                            obj[k] = v
 
-                    ent.append(obj)
-            else:
-                for x in item["entities"]:
-                    n = list(x.keys())[0] 
-                    if n in _filter:
-                        ent.append(x)
-
+                ent.append(obj)
             if len(ent) > 0:
                 item["entities"] = ent
             else:
                 item["entities"] = [{}]
-
             _responses[i] = item
-
         return _responses
 
     def transform_text(self, text):
@@ -253,7 +248,7 @@ class Driver(object):
         with open(self.dump_file) as f:
             reference_responses = json.load(f)
         reference_responses = [res for i, res in enumerate(reference_responses) if i not in dropped_idx]   # noqa
-        reference_responses = self.filter_entities(reference_responses)
+        reference_responses = self.filter_entities(reference_responses)[:10]
         for engine in self.asr_engines:
             print(f"Computing WER for {engine}")
             predicted = []
@@ -291,10 +286,12 @@ class Driver(object):
             self.df[engine + '_wer'] = wers
             pred_responses, _ = self.config.send_and_time_request(self.df[engine + '_transcription'])   # noqa
             pred_responses = self.filter_entities(pred_responses, pred_response=True)
+            self.df[engine+'_pred_response'] = pred_responses
             for i, (expected, predicted) in enumerate(tzip(reference_responses, pred_responses)):         # noqa
                 asr_score = self.metrics.compute_asr_score(expected, predicted)
                 score_list.append(asr_score)
             self.df[engine+'_slang_score'] = score_list
+        self.df['reference_response'] = reference_responses
         self.df['audio_links'] = urls
         self.df.to_csv(self.results_dump_file, index=False)
 
