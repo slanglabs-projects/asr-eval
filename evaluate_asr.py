@@ -27,7 +27,7 @@ class Driver(object):
         global urls_checked, dropped_idx
         self.config = config
         file_name = self.config.config['data']
-        self.df = pd.read_csv(file_name)[:10]
+        self.df = pd.read_csv(file_name)
         # self.df = self.df.head(250)
         self.dump_file = self.config.config['reference_dump']
         self.results_dump_file = self.config.config['results_dump']
@@ -248,7 +248,7 @@ class Driver(object):
         with open(self.dump_file) as f:
             reference_responses = json.load(f)
         reference_responses = [res for i, res in enumerate(reference_responses) if i not in dropped_idx]   # noqa
-        reference_responses = self.filter_entities(reference_responses)[:10]
+        reference_responses = self.filter_entities(reference_responses)
         for engine in self.asr_engines:
             print(f"Computing WER for {engine}")
             predicted = []
