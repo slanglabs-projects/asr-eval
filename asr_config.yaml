@@ -4,7 +4,11 @@ hosts:
   stage: "https://infer-stage.slanglabs.in"
   local: "http://localhost:8083"
 tiers:
-  prod: ~
+  prod: 
+    id: "356635d843f14df49ffa77409952680e"
+    key: "86bf513c8bc84c0f99047f48acb11654"
+    env: "prod"
+    version: "1.x.x"
   stage:
     id: "12e80a408de240f2a138c8daeb007fe6"
     key: "6315a7a8dfec4fb3bff96d0f17f7905d"
@@ -19,16 +23,17 @@ engines:
   - indic_conformer
   - google_speech
   - slang_google_speech
-data: 'reference_audio_transcripts.csv'
+data: 'payments_transcript__data_en.json'
 # data: 'WER_Sample.csv'
 #data: 'sample_transcripts.csv'
 directory: '/Users/harikrishnanc/Downloads/Benchmark_28_29_Nov - 1/'
 base_url: 'https://storage.googleapis.com/slang-audio-test-data/audio/'
 use_url: True
-reference_dump: 'payments_reference_data.json'
+reference_dump: 'payments.final.snlf.fixed.json'
 results_dump: 'ASR_quality_metrics_1.csv'
 asr_hints_file: 'payments_asr_hints.json'
-use_slang_normalizer: False
+use_slang_normalizer: True
 use_nemo: False
 use_number_parser: False
-bhashini_ip: "34.143.236.218"
+bhashini_ip: "34.87.107.54"
+score_nlp: True
