@@ -1,0 +1,1 @@
+{"precision": 0.5625, "recall": 0.45, "f1": 0.5, "details": {"payments_transaction_amount": 0.5882352941176471, "payments_name": 0.4, "missing": 0, "payments_transaction_action": 0.8571428571428571}}

@@ -60,7 +60,7 @@ class Driver(object):
                 print("Checking and dropping wrong URLs")
                 dropped_idx = self.check_url_exists()
                 urls_checked = True
-            self.df = self.df.drop(dropped_idx)
+            #self.df = self.df.drop(dropped_idx)
             print(dropped_idx)
             print(f"Dropped {len(dropped_idx)} URLs. {len(self.df)} URLs left") # noqa
         self.asr_engines = self.config.config['engines']
@@ -267,6 +267,7 @@ class Driver(object):
         with open(self.dump_file) as f:
             reference_responses = json.load(f)
         reference_responses = [res for i, res in enumerate(reference_responses) if i not in dropped_idx]   # noqa
+        self.data = [res for i, res in enumerate(self.data) if i not in dropped_idx]
         all_references = []
         for engine in self.asr_engines:
             print(f"Computing WER for {engine}")
@@ -274,6 +275,7 @@ class Driver(object):
             wers = []
             score_list = []
             urls = []
+            raw_trascriptions = []
             for i, f in enumerate(tqdm(self.data)):
                 references = f['references']
                 f = f['file_name']
@@ -293,6 +295,7 @@ class Driver(object):
                         hypothesis = self.transcript_audio(filepath, engine)
                         hypothesis_cache[engine].append(hypothesis)
 
+                    raw_trascriptions.append(hypothesis)
                     hypothesis = self.transform_text(hypothesis)
                     references = [self.transform_text(reference) for reference in references]
                     # wer = jiwer.wer(reference, hypothesis)
@@ -307,6 +310,7 @@ class Driver(object):
             self.df['References'] = [",".join(i['references']) for i in self.data]
             if len(all_references) == len(self.data):
                 self.df["transformed_references"] = all_references
+            self.df[engine+'_transcription_raw'] = raw_trascriptions
             self.df[engine + '_transcription'] = predicted
             self.df[engine + '_wer'] = wers
             if self.config.config['score_nlp']:
@@ -333,9 +337,9 @@ class Driver(object):
 
 
 def main(tier):
-    config = Config(tier=tier, config_file='asr_config.yaml')
-    driver = Driver(config, cohort="1")
-    driver.run()
+    #config = Config(tier=tier, config_file='asr_config.yaml')
+    #driver = Driver(config, cohort="1")
+    #driver.run()
 
     # config2 = Config(tier=tier, config_file='asr_config_nemo.yaml')
     # driver2 = Driver(config2, cohort="2")
