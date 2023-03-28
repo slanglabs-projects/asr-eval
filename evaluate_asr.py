@@ -315,7 +315,7 @@ class Driver(object):
             self.df[engine + '_wer'] = wers
             if self.config.config['score_nlp']:
                 pred_responses, _ = self.config.send_and_time_request(self.df[engine + '_transcription'])   # noqa
-                #pred_responses = self.filter_entities(pred_responses, pred_response=True)
+                pred_responses = self.filter_entities(pred_responses, pred_response=True)
                 self.df[engine+'_pred_response'] = pred_responses
                 intent_metrics = evaluate_intents(reference_responses, pred_responses)
                 entity_metrics = evaluate_entities(reference_responses, pred_responses, False)
@@ -337,9 +337,9 @@ class Driver(object):
 
 
 def main(tier):
-    #config = Config(tier=tier, config_file='asr_config.yaml')
-    #driver = Driver(config, cohort="1")
-    #driver.run()
+    config = Config(tier=tier, config_file='asr_config.yaml')
+    driver = Driver(config, cohort="1")
+    driver.run()
 
     # config2 = Config(tier=tier, config_file='asr_config_nemo.yaml')
     # driver2 = Driver(config2, cohort="2")

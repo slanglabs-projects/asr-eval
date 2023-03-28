@@ -4355,13 +4355,16 @@
     },
     {
         "index": 349,
-        "text": "make a payment through qr code",
+        "text": "request 10000 as salary from",
         "labeled_intent": "payments_transactions",
         "labeled_entities": {
             "payments_transaction_action": [
-                "qr",
-                "code"
-            ]
+                "request"
+            ],
+            "payments_transaction_amount": {
+                "std_money_amount": "10000.0",
+                "std_money_unit": null
+            }
         }
     },
     {
